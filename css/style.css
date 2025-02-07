@@ -1,0 +1,377 @@
+/* Reset Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a, .login-btn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('background.jpg') no-repeat center center/cover;
+    position: relative;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.animated-btn {
+    font-family: 'Press Start 2P', cursive;
+    padding: 15px 30px;
+    font-size: 12px;
+    border: none;
+    background: #b265e6;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 30px;
+}
+
+.animated-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px #a406ff;
+}
+
+
+section {
+    padding: 80px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #d892ee; 
+    font-size: 15px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 300px;
+    width: 600px;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pic-ctn {
+    width: 100vw;
+    height: 5px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+
+.container2{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    gap: 20;
+    flex-direction: column;
+    height: 100vh;
+    height: 300px;
+    width: 600px;
+    top: 60px;
+    left: calc(50% - 300px);
+    margin-left: 4px;
+}
+
+
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    margin: 15px 0;
+    color: #ab66ca;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: white;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background: #e100ff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    background: #d38be9;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+main, section {
+    flex: 1;
+}
+
+
+
+
+.img{
+    border-radius: 15px;
+}
+.img-p{
+    display: flex;
+    height: 500px;
+    width: 500px;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #ffffff; 
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+a{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #ffffff; 
+    font-size: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+P{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #ffffff; 
+    font-size: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+  
+.card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+.card:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+.card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+.title {
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  
+.bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+  }
+  
+.stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  
+svg {
+    fill: #17141d;
+    stroke-width: 2px;
+  }
+  
+.card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
+
