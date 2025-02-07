@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Fotos</title>
+  <link rel="stylesheet" href="css/passeios.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="img/31569-387675206_medium.mp4" type="video/mp4">
+    </video>
+    <header>
+      <h1>Férias</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>.</p>
+    <h1>Minhas férias teve seu foco principalmente na viagem a Porto Seguro - Bahia, mas sai para vários outros lugares, além da praia. Em Prudente fui ao shopping, balneário e parques... Além de Treinar, e estudar para o camp da Huawei.</h1>
+    <main>
+
+      <div class="gallery-container">
+        <div class="gallery">
+            <img src="img/Praia/20241225_104318.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241223_203652.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241223_161925.jpg" alt="Obra 2" onclick="openModal(this)">
+            <img src="img/Praia/20241224_231626.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241225_104946.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241225_180437.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241225_180728.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241225_200051.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241226_160752.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241226_164417.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241226_165419.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241226_165437.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241226_165938.jpg" alt="Obra 2" onclick="openModal(this)">
+            <img src="img/Praia/20241227_182407.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241227_183358.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/20241228_110755.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/natal.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/Praia/balnas.jpg" alt="Obra 1" onclick="openModal(this)">
+            <img src="img/sesi.jpg" alt="Obra 1" onclick="openModal(this)">
+        </div>
+        </div>
+      </div>
+      
+    </main>
+
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-img">
+      <div class="nav prev" onclick="changeImage(-1)">&#10094;</div>
+      <div class="nav next" onclick="changeImage(1)">&#10095;</div>
+      <button id="pause-play" onclick="toggleCarousel()">Pausar</button>
+  </div>
+
+    <footer>
+      <p>&copy; 2025 Gustavo. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+  
+  <script src="passeios.js"></script>
+</body>
+</html>

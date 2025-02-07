@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="css/galeria.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="img/31569-387675206_medium.mp4" type="video/mp4">
+    </video>
+    <div>
+        <a class="exit" href="projetos.html">Exit</a>
+    </div>
+    <div class="gallery-container">
+        <h1>Galeria de Fotos</h1>
+
+        <div class="gallery">
+            <img src="https://preview.redd.it/01tuowjtld931.jpg?width=640&crop=smart&auto=webp&s=660594f1c2a4f8fc12f4e380ae487befe71603da" onclick="openModal(this)">
+            <img src="https://preview.redd.it/t5dmyn6ll49a1.jpg?width=640&crop=smart&auto=webp&s=dc7a2b03cbed47bb564dbad833341c795165d839" onclick="openModal(this)">
+            <img src="https://i.pinimg.com/236x/a3/1c/41/a31c411d27085a522c6faaea0ad26a95.jpg" onclick="openModal(this)">
+            <img src="https://i.pinimg.com/222x/a4/0d/48/a40d48ded0ee1bd42ef3f24195e4f2d6.jpg" onclick="openModal(this)">
+            <img src="https://i.kym-cdn.com/entries/icons/original/000/031/277/cover4.jpg" onclick="openModal(this)">
+            <img src="https://i.pinimg.com/736x/6f/d8/1c/6fd81c5143b548e6ff299a9f51241a1b.jpg" onclick="openModal(this)">
+            <img src="https://media.tenor.com/Y5oUQOMG2uQAAAAM/yerr-tyler-the-creator.gif" onclick="openModal(this)">
+            <img src="https://i.pinimg.com/736x/73/e5/dd/73e5dda451374520b53fb95d83c7dbeb.jpg" onclick="openModal(this)">
+            <img src="https://i1.sndcdn.com/artworks-gKKYFhLbA06v-0-t500x500.jpg" onclick="openModal(this)">
+            <img src="img/Memes/♦️.jfif" onclick="openModal(this)">
+            <img src="img/Memes/3601b019-5452-4f94-91f0-6f7549b3e26f.jfif" onclick="openModal(this)">
+            <img src="img/Memes/5eed7896-1ade-4b00-b632-368dcf8b212e.jfif" onclick="openModal(this)">
+            <img src="img/Memes/26fbd4f2-beda-429a-a217-ed9b0aecc88f.jfif" onclick="openModal(this)">
+            <img src="img/Memes/48ab1fe4-4b12-40e9-ab6f-61d04e0b4788.jfif" onclick="openModal(this)">
+            <img src="img/Memes/78d8ae95-0441-40fc-8f6a-2a53e10b5c6a.jfif" onclick="openModal(this)">
+            <img src="img/Memes/1311ec5c-2461-472a-9f56-5c32f69b897f.jfif" onclick="openModal(this)">
+            <img src="img/Memes/a856528f-888d-480e-b198-26192b79edb6.jfif" onclick="openModal(this)">
+            <img src="img/Memes/c54dc32a-aa4d-43dc-86ac-6cbc85d6427d.jfif" onclick="openModal(this)">
+            <img src="img/Memes/ca8d3f83-a0ee-45ed-8509-313b1e20cbd8.jfif" onclick="openModal(this)">
+            <img src="img/Memes/caca.jfif" onclick="openModal(this)">
+            <img src="img/Memes/cat_kitty meme.jfif" onclick="openModal(this)">
+            <img src="img/Memes/cea377e8-3726-44e2-a819-edd8939ef5b2.jfif" onclick="openModal(this)">
+            <img src="img/Memes/D__.jfif" onclick="openModal(this)">
+            <img src="img/Memes/fino señores.jfif" onclick="openModal(this)">
+            <img src="img/Memes/MIKU ARGENTINAAAAA 🗣🇦🇷‼️ Showing up after weeks….jfif" onclick="openModal(this)">
+            <img src="img/Memes/NO NAME💪.jfif" onclick="openModal(this)">
+            <img src="img/Memes/pesoacore.jfif" onclick="openModal(this)">
+            <img src="img/Memes/pin_ @dayanaramnf ⛈.jfif" onclick="openModal(this)">
+            <img src="img/Memes/roubei de alguém.jfif" onclick="openModal(this)">
+            <img src="img/Memes/Se ele sabe eu tbm sabo.jfif" onclick="openModal(this)">
+            <img src="img/Memes/Shocked Black Guy Reaction Image _ Shocked Black Guy.jfif" onclick="openModal(this)">
+            <img src="img/Memes/si es niña si es niño.jfif" onclick="openModal(this)">
+            <img src="img/Memes/The dora.jfif" onclick="openModal(this)">
+            <img src="img/Memes/Timido 👍.jfif" onclick="openModal(this)">
+            <img src="img/Memes/Titulo.jfif" onclick="openModal(this)">
+            <img src="img/Memes/Trash.jfif" onclick="openModal(this)">
+            <img src="img/Memes/Will Smith Meme Figurinha Sticker.jfif" onclick="openModal(this)">
+
+        </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div class="nav prev" onclick="changeImage(-1)">&#10094;</div>
+        <div class="nav next" onclick="changeImage(1)">&#10095;</div>
+        <button id="pause-play" onclick="toggleCarousel()">Pausar</button>
+    </div>
+
+
+
+    <script src="galeria.js"></script>
+</body>
+
+</html>
